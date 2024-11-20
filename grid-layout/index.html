@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of CSE</title>
+    <style>
+        nav {
+            height: 50px;
+            background-color: skyblue;
+        }
+
+        .left-side {
+            background-color: cyan;
+        }
+
+        .right-list {
+            background-color: greenyellow;
+            margin: 5px 0;
+            padding: 0 10px;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            gap: 50px;
+        }
+
+        .right-side {
+            background-color: #0099FF;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #00ff99;
+            grid-column: 1 / 4;
+        }
+
+
+        @media screen and (max-width:746px) {
+
+
+            .main {
+               display: block;
+               
+            }
+
+            footer {
+                padding: 20px;
+                background-color: hsl(156, 55%, 29%);
+
+            }
+            
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar  -->
+    <nav>
+
+    </nav>
+    <main class="main">
+
+        <div class="left-side">
+            <div class="right-list">1</div>
+            <div class="right-list">2</div>
+            <div class="right-list">3</div>
+            <div class="right-list">4</div>
+            <div class="right-list">5</div>
+        </div>
+        <div class="main-content">
+            <h2> Department of CSE</h2>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis quasi praesentium temporibus
+                magnam quibusdam beatae corrupti quidem nihil in ducimus? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Veniam, autem!
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, reprehenderit laborum labore nemo
+                voluptatem vitae cupiditate, minima explicabo tempore sed, ipsam accusamus! Rem quisquam nihil
+                cupiditate facilis temporibus provident voluptates! </p>
+        </div>
+
+        <div class="right-side">
+
+            <h2> Compute </h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, doloribus.
+            <h2> Solve </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eligendi!</p>
+            <h2> Evolve</h2>
+
+
+        </div>
+
+        <footer>
+
+            <h1> Footer </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id voluptas consectetur, esse rerum
+                quisquam dolor. Accusantium voluptates quibusdam impedit?</p>
+
+        </footer>
+
+    </main>
+
+
+
+</body>
+
+</html>
