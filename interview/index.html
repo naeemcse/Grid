@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Page for Kids</title>
+    <style>
+        body {
+           text-align: center;
+            background-color: lightblue;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            margin-top: 20px;
+           border-radius: 10px;
+           transition: scale 1s;
+        }
+        img:hover{
+            scale: 1.5;
+        }
+        p {
+            font-size: 20px;
+            color: #333;
+        }
+      
+        
+        .button {
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: all 0.5s;
+ 
+        }
+        .button:hover{
+            background-color: white;
+            color: green;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Welcome to  CoderPals </h1>
+    <div>
+
+        <img id="image" src="./images/mutu-patlu.jpg" alt="Fun Image">
+    </div>
+    <p>Hey kids! Enjoy this fun page. Click the Button and show the photo </p>
+    
+        <button class="button" id="btn1" onclick="ChangeToMuto()">Mutu-Patlu</button>
+        <button class="button" id="btn2" onclick="ChangeToTom()">Tom and Jerry</button>
+        <button class="button" id="btn3" onclick="ChangeToGopal()">Gopal Var </button>
+
+         
+
+</body>
+
+
+<script>
+    var btn1 = document.getElementById("btn1");
+    var btn3 = document.getElementById("btn3");
+    var btn2 = document.getElementById("btn2");
+
+    var img = document.getElementById("image");
+
+    function ChangeToMuto(){
+        img.src="./images/mutu-patlu.jpg"
+    }
+
+    function ChangeToTom(){
+        img.src="./images/tomandjerry.avif"
+    }
+
+    function ChangeToTom(){
+        img.src="./images/tomandjerry.avif"
+    }
+
+    function ChangeToGopal(){
+         img.src="./images/gopal.avif";
+    }
+</script>
+</html>
